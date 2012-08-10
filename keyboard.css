@@ -1,0 +1,102 @@
+div.fila{
+float: left;
+clear: both;
+width: 100%;
+}
+
+#teclado{
+margin-left: auto;
+margin-right: auto;
+width: 696px;
+padding: 2px;
+}
+
+#teclado div{
+float: left;
+}
+
+#teclado a{
+display: block;
+float: left;
+width: 20px;
+height: 20px;
+border: 1px solid black;
+text-align: center;
+padding: 5px;
+line-height: 20px;
+text-decoration: none;
+margin: 1px;
+color: black;
+font-weight: bold;
+}
+
+#tab{
+line-height: 9px !important;
+}
+
+#teclado a:focus,#teclado a:active,#teclado a.hover{
+outline: 0;
+}
+
+#teclado a:hover,#teclado a.hover{
+background-color: #ffc;
+}
+
+#teclado a.dos{
+width: 54px;
+}
+
+#teclado a.dosymedio{
+width: 71px;
+}
+
+#teclado a.unoymedio{
+width: 37px;
+}
+
+#teclado a.seis{
+width: 190px;
+}
+
+#teclado a.dosfilas{
+height: 54px;
+}
+
+#teclado a.catorce{
+width: 462px;
+}
+
+#teclado a.quince{
+width: 496px;
+}
+
+#teclado a.enterespecial{
+height: 23px;
+margin-top:-2px;
+border-top: 1px solid white;
+}
+
+#numpad{
+margin-left: 50px;
+}
+
+#tecladowrapper{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+display: none;
+border-top: 1px solid black;
+background: white;
+}
+
+#ocultarTeclado{
+position:absolute;
+padding: 5px;
+top: 0;
+right: 0;
+background: red;
+color: white;
+text-decoration: none;
+outline: 0;
+}

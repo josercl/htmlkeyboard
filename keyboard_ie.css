@@ -1,0 +1,13 @@
+#teclado{
+width: 699px;
+padding-bottom: 3px;
+padding-right: 1px;
+}
+
+#letras div.fila{
+width: 511px;
+}
+
+#teclado a.dosfilas{
+height: 53px;
+}
