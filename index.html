@@ -3,7 +3,68 @@
 <head>
     <meta charset="UTF-8">
 	<title>HTMLKeyboard example</title>
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+	<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+	<script src="js/jquery.keyboard.js"></script>
+	<script src="js/bootstrap.js"></script>
 </head>
 <body>
+
+<div class="container">
+	<div class="hero-unit">
+		<h1>HTMLKeyboard</h1>
+		<p>Virtual HTML/JS/CSS powered <del>useless</del> keyboard</p>
+	</div>
+	<div class="row">
+		<div class="span24">
+			<form class="form-horizontal">
+				<div class="control-group">
+					<label class="control-label">Works with a text input</label>
+					<div class="controls">
+						<input type="text">
+						<p class="help-inline">Give it some focus</p>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">And textareas too</label>
+					<div class="controls">
+						<textarea style="width: 200px;height: 5em;resize: none" ></textarea>
+						<p class="help-inline"></p>
+					</div>
+				</div>
+			
+				<div class="control-group">	
+					<label class="control-label">Multilanguage Support</label>
+					<div class="controls">
+						<div class="btn-group" id="wtf" data-toggle="buttons-radio">
+							<button type="button" class="btn rad" id="en">English</button>
+							<button type="button" class="btn rad" id="es">Español</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<script>                                                                                                                                               
+$(document).ready(function(){
+    var lang="en";
+	$("<div id='keyb'></div>").appendTo("body").keyboard({
+        lang: "en"
+    });
+
+    $("#"+lang).toggleClass("active");
+
+    $("#en,#es").click(function(){
+        lang=$(this).attr("id");
+        
+        $("#keyb").keyboard({"lang" : lang});
+    });
+
+});
+</script>
+
 </body>
 </html>
