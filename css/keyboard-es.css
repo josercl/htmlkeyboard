@@ -1,0 +1,119 @@
+.keyboard-container{
+    width: 703px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.keyboard-wrapper{
+    width: 100%;
+    border-top: 1px solid black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: sans-serif;
+    font-size: 10pt;
+    display: none;
+}
+
+.keyboard-close{
+    color: white;
+    background: red;
+    position: absolute;
+    top: 0;
+    right: 1px;
+    text-decoration: none;
+    padding: 3px;
+}
+
+#keyboard {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 703px;
+}
+
+#keyboard li {
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #bbb;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#keyboard .caps,#keyboard  .tab,#keyboard  .left-shift,
+#keyboard .left-ctrl{
+    clear: left;
+}
+
+#keyboard li.space{
+    width: 320px;
+}
+
+#keyboard li.tab{
+    width: 65px;
+}
+
+#keyboard li.caps{
+    width: 85px;
+}
+
+#keyboard li.left-shift{
+    width: 65px;
+}
+
+#keyboard li.right-shift{
+    width: 107px;
+}
+
+#keyboard li.backspace{
+    width: 85px;
+}
+
+.lastitem {
+    margin-right: 0;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+
+.on, .alt {
+    display: none;
+}
+
+#keyboard li.enter1{
+    width: 60px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+}
+
+#keyboard li.enter2{
+    margin-top: -6px;
+    border-top: none;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    height: 47px;
+}
+
+#keyboard li.over,#keyboard li:hover{
+    background: #ffffcc;
+    border-color:#ffffcc;
+    cursor: pointer;
+}
+
+#keyboard li.shift_on{
+    text-transform: uppercase;
+}
+
+#keyboard li.last{
+    margin-right: 0;
+}
